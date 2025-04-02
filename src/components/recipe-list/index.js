@@ -29,7 +29,7 @@ export default function RecipeList({ recipeList }) {
               <Link href={`/recipe-list/${recipe.id}`} key={recipe.id}>
                 <Card>
                   <CardHeader>
-                    <CardTitle className="text-slate-700">
+                    <CardTitle className="text-slate-700 text-ellipsis line-clamp-1 ">
                       {recipe.name}
                     </CardTitle>
                     <CardDescription>Rating {recipe.rating}</CardDescription>
